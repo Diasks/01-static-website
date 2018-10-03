@@ -1,67 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">`
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">`
     <title>Hermans café</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=K2D:300" rel="stylesheet"></head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=K2D:300" rel="stylesheet">
+</head>
+
 <body>
-   <nav>
 
-        <div class="navWrapper">
-                <div class="meny"><li><a href="#">Om oss</a> <i class="fa fa-home" style="font-size:22px"> </i></li></div>
-                
-                <div class="meny"><li>
-                  <a href="#">Catering</a> <i class="fa fa-cutlery" style="font-size:22px"> </i></li></div>
-                    
-                
-                <div class="meny"><li>
-                  <a href="#">Kontakta oss</a> <i class="fa fa-comment-o" style="font-size:22px"> </i></li></div>
-                    
-                
-                
+    <header class="Slogan" role="banner" aria-label="Header">
+    
+        <div class="nameHerman">
+            <h1>HERMANS CAFÉ ANNO 1890</h1>
         </div>
-              
-                 
-    </nav>
-        
-
-    <header>
-          <div class="flexLogga">
-              <div class="nameHerman">
-                  HERMANS CAFÉ ANNO 1890
-              </div>
-          </div>
+    
+        <nav class="navbarContainer" role="navigation" aria-label="Navigation">
+            <ul>
+                <li class="navbarItem">
+                    <a href="#">Om oss</a> <i class="fa fa-home" style="font-size:24px"> </i></li>
+    
+    
+                <li class="navbarItem">
+    
+                    <a href="#">Catering</a> <i class="fa fa-cutlery" style="font-size:24px"> </i></li>
+    
+    
+    
+                <li class="navbarItem">
+    
+                    <a href="#flex">Kontakta oss</a> <i class="fa fa-comment-o" style="font-size:24px"> </i></li>
+    
+            </ul>
+        </nav>
     </header>
 
-<main>
-
-
-
-
-<section class="second">
-
-</section>
-
-<div class="clear"></div>
-      
-<div class="container">
-    <div class="item One"><p>Ta en titt nedan på vår meny!</p>
-        <button class="button">meny </button></div>
-
-
-    <div class="item Two">    <article>
-           
+    <main role="main" aria-label="Main">
     
-    <p class="intro"> Sedan 1800-talet har vi haft något att erbjuda för allas smaklökar!
-        </p>
-     </article></div>
-    <div class="item Three"></div>
-</div>
     
-</main>
+    
+        <div class="container">
+            <div class="item One">
+                <embed src="Meny.pdf#toolbar=0" type="application/pdf" />
+            </div>
+    
+    
+    
+            <article class="item Two" role="article">
+    
+                <h2> Något för allas smak!
+                </h2>
+                <p>Vi gör hela vår meny från grunden.</p>
+            </article>
+    
+            <div class="item Three">
+                <embed src="https://www.youtube.com/embed/3_Pp9fwLkBY" />
+    
+            </div>
+        </div>
+    </main>
 
-<footer class="flex"><p>JAG ÄR</p></footer>
-</body>
+
+    <footer id="flex" role="contentinfo">
+        <section class="footer" role="region">
+            <h3>ADRESS</h3>
+            <address>Värmdö köpcentrum<br>
+                Box 1012 | 134 27 Gustavsberg</address>
+    
+        </section>
+        <section class="footer middle" role="region">
+            <h3>TELEFON</h3>
+            <p>Tfn:<a href="tel:+08-57035020">08-570 350 20</a> | Fax:<a href="tel:+08-57035022">08-570 350 22</a>
+                <br>
+                Mail:<a href="mailto:info@minsida.se?subject=question..."> info@minsida.se</a>
+            </p>
+        </section>
+        <section class="footer" role="region">
+            <h3>ÖPPETTIDER</h3>
+            <p>
+                Mån – lör <time>10.00 – 19.00</time><br>
+                Sön <time>10.00 – 17.00</time></p>
+        </section>
+    </footer>
+    </body>
+
 </html>
