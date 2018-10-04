@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">`
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">`
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hermans café</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,18 +22,18 @@
         <nav class="navbarContainer" role="navigation" aria-label="Navigation">
             <ul>
                 <li class="navbarItem">
-                    <a href="#">Om oss</a> <i class="fa fa-home" style="font-size:24px"> </i></li>
+                    <a href="#">Om oss</a> <i class="fa fa-home" aria-hidden="true" style="font-size:24px"> </i></li>
     
     
                 <li class="navbarItem">
     
-                    <a href="#">Catering</a> <i class="fa fa-cutlery" style="font-size:24px"> </i></li>
+                    <a href="#">Catering</a> <i class="fa fa-cutlery" aria-hidden="true" style="font-size:24px"> </i></li>
     
     
     
                 <li class="navbarItem">
     
-                    <a href="#flex">Kontakta oss</a> <i class="fa fa-comment-o" style="font-size:24px"> </i></li>
+                    <a href="#flex">Kontakta oss</a> <i class="fa fa-comment-o" aria-hidden="true" style="font-size:24px"> </i></li>
     
             </ul>
         </nav>
@@ -44,8 +44,8 @@
     
     
         <div class="container">
-            <div class="item One">
-                <embed src="Meny.pdf#toolbar=0" type="application/pdf" />
+            <div class="item One">  <a href="Meny.pfd" target="_blank"> <button type="button" class="knapp">MENY</button></a>
+             <embed src="Meny.pdf#toolbar=0&scrollbar=0" type="application/pdf" class="pdf" />
             </div>
     
     
@@ -54,7 +54,8 @@
     
                 <h2> Något för allas smak!
                 </h2>
-                <p>Vi gör hela vår meny från grunden.</p>
+                <p>Vi gör hela vår meny från ekologiska råvaror. Ta en titt nedan bla bla på vår meny för catering</p>
+                <button type="button" class="knappCatering">CATERING</button></a>
             </article>
     
             <div class="item Three">
@@ -82,8 +83,8 @@
         <section class="footer" role="region">
             <h3>ÖPPETTIDER</h3>
             <p>
-                Mån – lör <time>10.00 – 19.00</time><br>
-                Sön <time>10.00 – 17.00</time></p>
+                Mån – lör <time>10:00</time> – <time>19:00</time><br>
+                Sön <time>10:00</time> – <time>17:00</time></p>
         </section>
     </footer>
     </body>
