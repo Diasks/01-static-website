@@ -9,36 +9,26 @@ html, body {
     height: 100%;
 }
 
-
 body {
     background-image: linear-gradient(rgba(238, 227, 227, 0.082),rgb(170, 176, 179)), url(batata.jpeg); 
     background-size:contain;
     background-size: cover;
     background-repeat: no-repeat;
    background-color: white;
-
-  
-
 }
-
-
 
 .navbarContainer {
     display: flex;
   justify-content: center;
-  width: 100%;
-
-  
+  width: 100%; 
 }
-
-
 
 ul {
     display: flex;
     justify-content: center;
-    width: 50%;
-    
+    width: 50%;  
 }
+
 .navbarItem  {
 
   list-style: none;
@@ -50,39 +40,33 @@ ul {
   font-size:20px;
   width: 50%;
   text-align: center;
-  
+  font-weight: bold;
 }
-
 
 a {
     color: black;
-  
 }
+
+a:focus {
+    background-color: yellow;
+  }
 
 a:hover {
     outline: 3px solid white;
      background-color: white; 
 }
 
-
-
-
-
-.Slogan {
+.header {
     display: flex;
     justify-content: center;
     flex-direction: column;
   padding-top:5px;
   width:100%;
-
-
 }
 
 .nameHerman {
     width: 100%;
    height: 100%;
-   
-   
 }
 
 .nameHerman > h1 {
@@ -96,54 +80,44 @@ a:hover {
     display: flex;
 flex-direction: row;
   justify-content: center;
-  
+}
+
+.item {
+    margin: 20px;
+height:300px;
+width: 30%;
+}
+
+img {
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 .knapp {
    display: none;
-
  padding: 10px;
  border-radius: 10px;
  font-size:20px;
  cursor: pointer;
  font-family: 'K2D', sans-serif;
  background-color: black;
- font-weight: bold;
  color: white;
-
+ text-transform: uppercase;
 }
+
 .knapp:hover {
     background-color: grey;
 }
-   
-.item {
-    margin: 20px;
-height:300px;
-width: 30%;
-
-   
+.knapp:focus {
+    background-color: yellow; 
 }
 
-
-
-embed {
-    width: 100%;
-    height: 100%;
-  
-    
-}
-
-
-
-.Two {
-  
-    
+.Two {  
     font-family: 'K2D', sans-serif;
     line-height: 1.5;
     text-align: center;
-    
 }
-
 .knappMeny {
     background-color:black;
     border: 1px solid black;
@@ -155,9 +129,14 @@ embed {
     margin-top:5px;
     border-radius: 10px;
     font-family: 'K2D', sans-serif;
+    text-transform: uppercase;
 }
 .knappMeny:hover {
     background-color: grey;
+}
+
+.knappMeny:focus {
+    background-color: yellow;
 }
 
 .knappCatering {
@@ -171,6 +150,7 @@ embed {
  margin-top:5px;
  border-radius: 10px;
  font-family: 'K2D', sans-serif;
+ text-transform: uppercase;
 }
 
 .knappCatering:hover {
@@ -178,15 +158,21 @@ embed {
 }
 
 
+.knappCatering:focus {
+    background-color: yellow;
+} 
 
+iframe {
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+}
 
 #flex {
  display: flex;
 position: absolute;
 bottom: 0;
  width: 100%;
-
-
 } 
 
 .footer {
@@ -195,77 +181,87 @@ bottom: 0;
   line-height: 1.5;
     text-align:center;
     width: 100%;
+    font-size: 20px;
 }
 
-/* Extra small devices (phones, 600px and down) */
+
+
+
+/* Små skärmar */
 @media only screen and (max-width: 600px) {
+
 body {
-    background-image: linear-gradient(rgba(170, 176, 179, 0.288), rgba(0, 0, 0, 0.788), rgba(95, 100, 102, 0.075));
+    background-image: linear-gradient(rgba(170, 176, 179, 0.288), rgba(212, 194, 194, 0.788), rgba(95, 100, 102, 0.075));
 }
- .Slogan {
-height: 30%;
+
+ .header {
+height: 27%;
  }
-    
+
+ .navbarContainer {
+    width: 100%;
+    height:100%;
+}
+
+ul {
+width: 100%;
+height: 100%;
+}
+
+.navbarItem {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 5px;
+}
     .container {
         flex-direction: column;
         width:100%;
-
     }
+
     .item {
        margin: 0px;
        width: 100%;
-       
     }
-    .knapp {
-        display:flex;
-        width: 100%;
-        justify-content: center; 
-        
+
+    img {
+        display: none;
     }
+  
+  .One {
+      height:50%;
+  }
+
+  .knapp {
+    display:flex;
+    width: 100%;
+    justify-content: center; 
+}
+
+    .Two {
+        height: 40%;
+        color: black;
+    }
+
     .knappMeny {
         display: none;
     }
    
-  .pdf {
-      display: none;
-  }
-.One {
-    height:80%;
-}
-    .Two {
-        
-        height: 40%;
-        color: white;
-    }
-
     .Three {
         height: 100%;
-    }
-
-    .navbarContainer {
-        width: 100%;
-        height:100%;
-    }
-ul {
-    width: 100%;
-    height: 100%;
-}
-    .navbarItem {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin-top: 5px;
+       margin-top: 5px;
     }
 
     #flex {
         flex-direction: column;
         width:100%;
        position: relative;
-       
     }
+
 .footer {
     border-bottom: 1px solid black;
 }
+
     a:hover {
         outline: 3px solid grey;
          background-color: black; 
@@ -280,25 +276,17 @@ ul {
             flex-wrap: wrap;
             flex-direction: column;
             width: 100%;
-           
          }
 
          .item {
              align-self: center;
            width: 50%;
            height: 20%;
-            
-         }
-
-         #flex {
-             display: flex;
-             position: relative;
          }
 
          .navbarContainer {
             width: 100%;
             height: 100%;
-           
         }
 
         a:hover {
@@ -306,6 +294,7 @@ ul {
              background-color: black; 
              color: white;
         }
+
     ul {
        height: 100%;
         width: 100%;
@@ -316,20 +305,27 @@ ul {
             padding: 0;
         }
 
-        .pdf {
+        img {
             display: none;
         }
+
         .knapp {
             display:flex;
             width: 100%;
             justify-content: center;
-           
         }
+
         .knappMeny {
             display: none;
         }
-        .Slogan {
+
+        .header {
             height: 20%;
+        }
+
+        #flex {
+            display: flex;
+            position: relative;
         }
     }
 
