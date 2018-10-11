@@ -7,88 +7,99 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hermans café</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=K2D:300" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="header" role="banner" aria-label="Header">
+    <header class="header" role="banner" aria-label="Header" tabindex="0">
 
         <div class="nameHerman">
             <h1>HERMANS CAFÉ ANNO 1890</h1>
         </div>
 
-        <nav class="navbarContainer" role="navigation" aria-label="Navigation">
-
-
-            <ul><li class="mobileNav"><a href="#"><i class="fas fa-home" style="font-size:50px" title="Om oss"></i></a></li>
+        <nav class="navbarContainer" role="navigation" aria-label="Navigation" tabindex="0">
+            <ul>
+                <li class="mobileNav"><a aria-label="Läs mer om oss" href="#" title="Om oss">
+                    <i class="fas fa-home" style="font-size:35px" title="Om oss"></i> <span>Om oss</span> </a></li>
                 <li class="navbarItem">
-                    <a href="#">Om oss</a> <i class="fas fa-home" aria-hidden="true" title="Om oss"> </i></li>
+                    <a aria-label="Läs mer om oss" href="#">Om oss</a> <i class="fas fa-home" aria-hidden="true" title="Om oss">
+                    </i></li>
 
 
-<li class="mobileNav"><a href="#"><i class="fas fa-utensils" style="font-size:50px" title="Vår meny"></i></a></li>
-                <li class="navbarItem">
-
-                    <a href="#">Catering</a> <i class="fas fa-utensils" aria-hidden="true" title="Vår meny"> </i></li>
-
-
-                    <li class="mobileNav"><a href="#flex"><i class="far fa-comment" style="font-size:50px" title="Kontakta oss"></i></a></li>
+                <li class="mobileNav"><a aria-label="Gå till våra menyer" href="#menySection" title="Våra menyer"><i
+                            class="fas fa-utensils" style="font-size:35px" title="Våra Menyer"></i> <span>Menyer</span></a></li>
                 <li class="navbarItem">
 
-                    <a href="#flex">Kontakta oss</a> <i class="far fa-comment" aria-hidden="true" title="Kontakta oss">
+                    <a aria-label="Gå till våra menyer" href="#menySection">Menyer</a> <i class="fas fa-utensils"
+                        aria-hidden="true" title="Vår meny"> </i></li>
+
+
+                <li class="mobileNav"><a aria-label="Gå till kontaktinformation" href="#flex" title="Kontakta oss"><i
+                            class="far fa-comment" style="font-size:35px" title="Kontakta oss"></i><span>Kontakt</span></a></li>
+                <li class="navbarItem">
+
+                    <a aria-label="Gå till kontaktinformation" href="#flex">Kontakta oss</a> <i class="far fa-comment"
+                        aria-hidden="true" title="Kontakta oss">
                     </i></li>
 
             </ul>
         </nav>
     </header>
 
-    <main role="main" aria-label="Main">
+
+    <main role="main" aria-label="Main" class="container">
 
 
 
-        <div class="container">
-            <div class="item One"> <a href="pdfmenu.html" target="_blank"> <button type="button" class="knapp">cafémeny</button></a>
-                <iframe src="https://www.youtube.com/embed/_hAWv_dl54U" title="tre olika sätt att göra cocktailmuffins" frameborder="1" allowfullscreen tabindex="-1"></iframe>
-            </div>
+
+        <div class="item One">
+            <iframe title="Video på tre olika sätt att göra cocktailmuffins" src="https://www.youtube.com/embed/_hAWv_dl54U"
+                allowfullscreen tabindex="0"> </iframe>
+        </div>
 
 
 
-            <article class="item Two" role="article">
+        <article class="item Two" role="article" tabindex="0">
 
-                <h2> Något för allas smak!
-                </h2>
-                <p>Vi gör hela vår meny från ekologiska råvaror. Ta en titt nedan på våra menyer.</p>
-                <a href="pdfmenu.html" target="_blank"> <button type="button" class="knappMeny"> Cafémeny</button></a>
-                <a href="pdfmenu.html" target="_blank"> <button type="button" class="knappCatering"> Catering</button></a>
+            <h2> Något för allas smak!
+            </h2>
+            <p id="menySection">Vi gör hela vår meny från ekologiska råvaror. Ta en titt nedan på våra menyer.</p>
+            <a aria-label="Cafémeny" href="pdfmenu.html" target="_blank"> <button type="button" class="knappMeny"
+                    aria-hidden="true"> Cafémeny</button></a>
+            <a aria-label="Cateringmeny" href="pdfmenu.html" target="_blank"> <button type="button" class="knappCatering"
+                    aria-hidden="true"> Catering</button></a>
 
-            </article>
+        </article>
 
-            <div class="item Three">
-                <iframe src="https://www.youtube.com/embed/3_Pp9fwLkBY" title="Hur man lagar bakelser snabbt på fyra olika sätt"
-                    allowfullscreen tabindex="-1"></iframe>
+        <div class="item Three" tabindex="0">
+            <iframe title="Video på hur man lagar bakelser snabbt på fyra olika sätt" src="https://www.youtube.com/embed/3_Pp9fwLkBY"
+                allowfullscreen tabindex="0"></iframe>
 
 
-            </div>
+        </div>
         </div>
     </main>
 
 
     <footer id="flex" role="contentinfo">
-        <section class="footer" role="region">
+        <section class="footer" role="region" tabindex="0">
             <h3>ADRESS</h3>
             <address>Värmdö köpcentrum<br>
-               134 27 Gustavsberg</address>
+                134 27 Gustavsberg</address>
 
         </section>
         <section class="footer middle" role="region">
             <h3>TELEFON</h3>
-            <p>Tfn: <a href="tel:+468-57035020">08-570 350 20</a> 
+            <p>Tfn: <a aria-label="Ring oss på telefonnummer 0857035020" href="tel:+468-57035020">08-570 350 20</a>
                 <br>
-                Mail: <a href="mailto:info@minsida.se?subject=question..."> info@minsida.se</a>
+                Mail: <a aria-label="Maila oss på mailadress info@minsida.se" href="mailto:info@minsida.se?subject=question...">
+                    info@minsida.se</a>
             </p>
         </section>
-        <section class="footer" role="region">
+        <section class="footer" role="region" tabindex="0">
             <h3>ÖPPETTIDER</h3>
             <p>
                 Mån – lör <time>10:00</time> – <time>19:00</time><br>
