@@ -1,5 +1,6 @@
     $width: 100%;
     $height: 100%;
+    $weighty: 80%;
     $font-family: 'K2D', sans-serif;
     $uppercase: uppercase;
     $flex: flex;
@@ -13,6 +14,7 @@
     $pointer: pointer;
     $row: row;
     $column: column;
+    $relative: relative;
     $ten: 10px;
     $twenty: 20px;
     $one: 1px;
@@ -63,7 +65,7 @@
         ul {
             display: $flex;
             justify-content: $center;
-            width: 80%; 
+            width: $weighty; 
             height: $height;   
             .navbarItem  {
                 list-style: $none;
@@ -73,7 +75,7 @@
                 text-transform: $uppercase;
                 font-family: $font-family;
                 font-size: 22px;
-                width: 80%;
+                width: $weighty;
                 text-align: $center;
                 font-weight: $bold;
                 height: $height;
@@ -108,8 +110,6 @@
             width: 30%;
         }
     }
-  
-
 
     .Two {  
         font-family: $font-family;
@@ -146,7 +146,7 @@
         border: 2px solid $colorblack;
         width: $width;
         height: $height;
-        border: 1px solid black;
+        border: $one solid $colorblack;
     }
 
     #flex {
@@ -161,7 +161,7 @@
             text-align: $center;
             width: $width;
             font-size: $twenty;
-            border-bottom: 1px solid black;
+            border-bottom: $one solid $colorblack;
         }
     } 
 
@@ -190,11 +190,11 @@
         height: $height;
         justify-content: $center;
         padding-top: $twenty;
-        padding-left: 20px;
+        padding-left: $twenty;
         a {
             width: $width;
             text-align: $center;
-            padding-top: 5px;
+            padding-top: $five;
             span {
                 font-size: 15px;
                 text-transform: $uppercase;
@@ -232,7 +232,7 @@
     #flex {
         flex-direction: $column;
         width: $width;
-        position: relative;
+        position: $relative;
             .footer {
             border-bottom: $one solid $colorblack;
         }
@@ -244,21 +244,18 @@
         background-image: linear-gradient(rgba(170, 176, 179, 0.288), rgba(212, 194, 194, 0.788), rgba(95, 100, 102, 0.075));
         header {
             height:20%;
-            border: 1px solid yellow;
         } 
     }
 
     .navbarContainer {
-        width: 100%;
-        height: 100%;
-        border: 1px solid orange;
+        width: $width;
+        height: $height;
         ul {
-            height: 100%;
-            width: 100%;
-            border: 1px solid blue;
+            height: $height;
+            width: $width;
             .navbarItem {
-                width: 100%;
-                height: 100%;
+                width: $width;
+                height: $height;
                 font-size:22px;
             }
         }
@@ -268,10 +265,9 @@
         flex-direction: column;
         .item {
         align-self: $center;
-        width: 80%;
+        width: $weighty;
         height: 50%;
-        margin: 5px;
-        border: 1px solid green;
+        margin: $five;
     }
     }
 
@@ -287,14 +283,14 @@
     }
    
     a:hover {
-        outline: 3px solid grey;
-        background-color: black; 
-        color: white;
+        outline: $three solid $colorgrey;
+        background-color: $colorblack; 
+        color: $colorwhite;
     }
 
     #flex {
-        display: flex;
-        position: relative;
+        display: $flex;
+        position: $relative;
     }
 }
     
