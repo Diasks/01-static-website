@@ -165,7 +165,6 @@
         }
     } 
 
-/* Små skärmar */
     @media only screen and (max-width: 580px) {
 
     body {
@@ -238,7 +237,7 @@
         }
     }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */ 
+
     @media only screen and (min-width:581px) and (max-width: 690px)  {
     body {
         background-image: linear-gradient(rgba(170, 176, 179, 0.288), rgba(212, 194, 194, 0.788), rgba(95, 100, 102, 0.075));
