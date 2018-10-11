@@ -170,7 +170,7 @@
     body {
         background-image: linear-gradient(rgba(170, 176, 179, 0.288), rgba(212, 194, 194, 0.788), rgba(95, 100, 102, 0.075));
         .header {
-            height: 30%;
+            height: 40%;
             border-bottom: $one solid $colorblack;
             .navbarContainer {    
                 width: $width;
@@ -188,7 +188,6 @@
         width: $width;
         height: $height;
         justify-content: $center;
-        padding-top: $twenty;
         padding-left: $twenty;
         a {
             width: $width;
