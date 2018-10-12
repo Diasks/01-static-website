@@ -166,7 +166,6 @@
     } 
 
     @media only screen and (max-width: 580px) {
-
     body {
         background-image: linear-gradient(rgba(170, 176, 179, 0.288), rgba(212, 194, 194, 0.788), rgba(95, 100, 102, 0.075));
         .header {
@@ -188,7 +187,6 @@
         width: $width;
         height: $height;
         justify-content: $center;
-        padding-left: $twenty;
         a {
             width: $width;
             text-align: $center;
@@ -209,8 +207,10 @@
 
     .container {
         flex-direction: $column;
+        justify-content: $center;
         .item {
-            margin-top: $zero;
+            margin: $zero;
+            margin-top:$five;
             width: $width;
             height: 50%;
         } 
@@ -238,7 +238,6 @@
 }
 
     @media only screen and (min-width:581px) and (max-width: 690px)  {
-   
     body {
         background-image: linear-gradient(rgba(170, 176, 179, 0.288), rgba(212, 194, 194, 0.788), rgba(95, 100, 102, 0.075));
         header {
