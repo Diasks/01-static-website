@@ -34,19 +34,6 @@
         height: $height;
     }
 
-    #jumptomain a {
-        position: absolute;
-        top: auto;
-        width: $one;
-        height: $one;
-        overflow: hidden;
-        &:focus {
-            position: static;
-            width: auto;
-            height: auto;
-        }
-    }
-
     body {
         background-image: linear-gradient(rgba(238, 227, 227, 0.082),rgb(170, 176, 179)), url(batata.jpeg); 
         background-size: contain;

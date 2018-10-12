@@ -10,20 +10,6 @@ html, body {
   height: 100%;
 }
 
-#jumptomain a {
-  position: absolute;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-#jumptomain a:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
-
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 227, 227, 0.082)), to(#aab0b3)), url(batata.jpeg);
   background-image: linear-gradient(rgba(238, 227, 227, 0.082), #aab0b3), url(batata.jpeg);
