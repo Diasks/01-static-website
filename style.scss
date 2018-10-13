@@ -22,7 +22,6 @@
     $five: 5px;
     $zero: 0;
 
-
     * {
         box-sizing: border-box;
         margin: $zero;
@@ -45,19 +44,32 @@
             flex-direction: $column;
             padding-top: $five;
             width: $width;
-            .nameHerman {
-                width: $width;
-                height: $height;
-                h1 {
-                text-align: $center;
-                font-family: $font-family;
-                font-weight: normal;
-                font-size: 35px;
+            #jumptoMain {
+                height: $one;
+                width: $one;
+                position: absolute;
+                overflow: hidden;
+                top:-15px;  
+                &:focus {
+                    overflow: visible;
+                    width: auto;
+                    height: auto;
+                }
             }
-        }
         }
     }
    
+    .nameHerman {
+        width: $width;
+        height: $height;
+        h1 {
+        text-align: $center;
+        font-family: $font-family;
+        font-weight: normal;
+        font-size: 35px;
+    }
+    }
+  
     .navbarContainer {
         display: $flex;
         justify-content: $center;

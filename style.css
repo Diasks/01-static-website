@@ -33,12 +33,26 @@ body .header {
   width: 100%;
 }
 
-body .header .nameHerman {
+body .header #jumptoMain {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -15px;
+}
+
+body .header #jumptoMain:focus {
+  overflow: visible;
+  width: auto;
+  height: auto;
+}
+
+.nameHerman {
   width: 100%;
   height: 100%;
 }
 
-body .header .nameHerman h1 {
+.nameHerman h1 {
   text-align: center;
   font-family: "K2D", sans-serif;
   font-weight: normal;
